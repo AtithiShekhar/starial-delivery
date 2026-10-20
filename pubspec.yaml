@@ -1,0 +1,75 @@
+name: deliveryboy_multivendor
+description: A new Flutter project.
+
+publish_to: "none"
+# version: 2.1.0+4
+version: 1.0.0+1
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.15
+  connectivity_plus: ^4.0.2
+  shimmer: ^2.0.0
+
+  # Firebase (aligned versions)
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  firebase_messaging: ^14.9.4
+
+  # Web + networking
+  webview_flutter: ^4.10.0
+  http: ^1.2.1
+  url_launcher: ^6.3.1
+
+  # Notifications & media
+  flutter_local_notifications: ^17.2.4
+  flutter_ringtone_player: ^3.2.0
+
+  # JWT
+  jaguar_jwt: ^3.0.0
+
+  # UI / utilities
+  country_code_picker: ^3.0.0
+  sms_autofill: ^2.3.0
+  path_provider: ^2.0.10
+  flutter_svg: ^1.1.6
+  lottie: ^2.7.0
+  cached_network_image: ^3.3.1
+  provider: ^6.0.5
+
+  # OTP input (better option)
+  pinput: ^4.0.0
+
+  flutter_localizations:
+    sdk: flutter
+
+dependency_overrides:
+  modal_bottom_sheet:
+    git:
+      url: https://github.com/danReynolds/modal_bottom_sheet.git
+      path: modal_bottom_sheet
+  pin_input_text_field: ^4.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/PNG/
+    - assets/images/SVG/
+    - assets/animation/
+    - lib/Language/
+
+  fonts:
+    - family: opensans
+      fonts:
+        - asset: assets/font/OpenSans-Regular.ttf
